@@ -5,7 +5,7 @@ require('dotenv').config();
 const mongoClient = mongodb.MongoClient;
 const objectID = mongodb.ObjectID;
 
-const dbUrl = "mongodb://127.0.0.1:27017" || proces.env.DB_URL;
+const dbUrl = proces.env.DB_URL || "mongodb://127.0.0.1:27017";
 const port = process.env.PORT || 4000
 
 // demo_db
