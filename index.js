@@ -6,6 +6,7 @@ const mongoClient = mongodb.MongoClient;
 const objectID = mongodb.ObjectID;
 
 const dbUrl = "mongodb://127.0.0.1:27017" || proces.env.DB_URL;
+const port = process.env.PORT || 4000
 
 // demo_db
 // yqTyCICf9ehBkygY
@@ -61,7 +62,7 @@ app.put("/update-user/:id", async (req,res) => {
     }
 })
 
-app.listen(3000, () => console.log("App is running"))
+app.listen(port, () => console.log("App is running"))
 
 
 
