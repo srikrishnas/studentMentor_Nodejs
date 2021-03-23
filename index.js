@@ -62,7 +62,7 @@ app.put("/update-user/:id", async (req,res) => {
     }
 })
 
-app.listen(process.env.PORT || 3000, () => console.log("App is running"))
+app.listen(port, () => console.log("App is running"))
 
 
 
